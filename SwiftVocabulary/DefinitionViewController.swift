@@ -12,7 +12,7 @@ class DefinitionViewController: UIViewController {
 
     @IBOutlet weak var definition: UILabel!
     
-    var word:VocabularyWord?
+    var def:VocabularyWord?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +21,9 @@ class DefinitionViewController: UIViewController {
     }
     
     func updateViews() {
-        if let word = word {
-            if (word.definition != nil) {
-                definition.text = word.definition
-            }
+        if let def = def {
+            definition.text = def.definition
+            title = def.word
         }
         
     }

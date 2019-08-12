@@ -19,6 +19,7 @@ class WordsTableViewController: UITableViewController {
                                       VocabularyWord(word: "Bool", definition: "A value that is either true or false")
     ]
     
+    
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,8 +38,6 @@ class WordsTableViewController: UITableViewController {
         return cell
     }
     
-    
-    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -46,9 +45,7 @@ class WordsTableViewController: UITableViewController {
         if (segue.identifier == "ShowDefinitionSegue") {
             guard let indexPath = tableView.indexPathForSelectedRow, let definitonVC = segue.destination as? DefinitionViewController else { return }
             let word = wordList[indexPath.row]
-            definitonVC.word = word
-            
+            definitonVC.def = word
         }
     }
-    
 }

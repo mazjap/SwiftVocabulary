@@ -45,15 +45,7 @@
                             <outlet property="delegate" destination="azM-UC-3eO" id="QfO-gB-2Qm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="f3K-hp-W9Y">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="g0I-vo-eLF">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Da-Ay-hbf">
-                                <rect key="frame" x="364" y="7" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Edit"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="f3K-hp-W9Y"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFP-Ww-HHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
